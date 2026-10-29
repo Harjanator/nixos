@@ -239,26 +239,23 @@ in {
   	};
 
 #  	environment.systemPackages = with pkgs; [
+      		wget
+			curl
 #      		tree
 #      		man-db
-#      		jq
+      		jq
 #      		gcc
-#      		ripgrep
+      		ripgrep
 #      		fd
-#      		unzip
+      		unzip
 #      		fuse
 #      		inxi
-#      		wget
 #      		docker_29
 #      		docker-compose
-#      		tmux
+      		tmux
 #      		gdu
 #      		fzf
-#      		filezilla
-#      		gedit
-#      		vscode
-#      		slack
-#      		discord
+
 #      		rnote
 #      		xclip
 #      		copyq
