@@ -17,7 +17,7 @@ let
 #    		rev = "9f0bd593f9420b34881cf1fac6ca4d3630421795";
 #  	};
   	nixos-ssh = fetchGit {
-    		url = "https://github.com/typovrak/nixos-ssh.git";
+    		url = "https://github.com/Harjanator/nixos-ssh.git";
     		ref = "main";
     		rev = "21357c7e08a295cc55e88ad16085dc47a97efe32";
   	};
@@ -117,12 +117,12 @@ let
 #    		rev = "1772380088567bdd610f90b6fb99486951ce9bff";
 #  	};
   	nixos-fastfetch = fetchGit {
-    		url = "https://github.com/typovrak/nixos-fastfetch.git";
+    		url = "https://github.com/Harjanator/nixos-fastfetch.git";
     		ref = "main";
     		rev = "0ecefadefacbd5156375966bb21441f288072f7b";
   	};
   	nixos-locale = fetchGit {
-    		url = "https://github.com/typovrak/nixos-locale.git";
+    		url = "https://github.com/Harjanator/nixos-locale.git";
     		ref = "main";
     		rev = "2eb03936d7daba2d62e78d353ce07bbdf5e8601b";
   	};
