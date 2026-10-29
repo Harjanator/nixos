@@ -238,7 +238,7 @@ in {
   		groups.mlocate = {};
   	};
 
-#  	environment.systemPackages = with pkgs; [
+  	environment.systemPackages = with pkgs; [
       		wget
 			curl
 #      		tree
@@ -287,7 +287,7 @@ in {
 #			stripe-cli
 #			claude-monitor
 #			visidata
-#	];
+	];
 
 # 	services = {
 #		printing.enable = true;
