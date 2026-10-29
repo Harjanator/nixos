@@ -206,11 +206,11 @@ in {
     		efi.canTouchEfiVariables = true;
   	};
 
-#	networking = {
+	networking = {
 #		hostName = "typonixos";
-#		networkmanager.enable = true;
+		networkmanager.enable = true;
 #		hosts."127.0.0.1" = [ "passbolt.local" ];
-#	};
+	};
 
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -231,8 +231,8 @@ in {
     			extraGroups = [
 				"networkmanager"
 				"wheel"
-				"audio"
-				"docker"
+#				"audio"
+#				"docker"
 			];
 		};
   		groups.mlocate = {};
