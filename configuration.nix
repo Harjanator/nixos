@@ -234,13 +234,30 @@ in {
 #				"audio"
 #				"docker"
 			];
+			openssh.authorizedKeys.keys = ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHta20AMtJvLmxCglxEQrnutFacEGTJ+/80ODeS2lbT7 gurulandia"];
 		};
   		groups.mlocate = {};
   	};
+	users.users.root.openssh.authorizedKeys.keys = ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHta20AMtJvLmxCglxEQrnutFacEGTJ+/80ODeS2lbT7 gurulandia"];
+
+	security.sudo = {
+		# place top level options (like wheelNeedPassword) here
+		enable = true; # make sure to enable the sudo package
+		execWheelOnly = false;
+		wheelNeedsPassword = false;
+
+		extraConfig = "#includedir /etc/sudoers.d"; # write custom config in here
+
+		extraRules = [
+			# place sudoers rules here
+		];
+	};
+
 
   	environment.systemPackages = with pkgs; [
       		wget
 			curl
+			git
 #      		tree
 #      		man-db
       		jq
@@ -298,6 +315,8 @@ in {
 #		package = pkgs.docker_29;
 #		enable = true;
 #	};
+
+  	programs.nix-ld.enable = true; 
 
 	zramSwap.enable = true;
 	systemd.oomd.enable = true;
