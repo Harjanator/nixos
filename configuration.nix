@@ -270,14 +270,14 @@ in {
 			traceroute
 			inetutils
 			fzf
-    
+      		tree			
+     		fd
+
 	# git git-lfs stow 
     # nixos-anywhere htop btop
 
-#      		tree
 #      		man-db
 #      		gcc
-#      		fd
 #      		fuse
 #      		inxi
 #      		docker_29
