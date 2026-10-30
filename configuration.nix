@@ -6,11 +6,11 @@ let
 #    		ref = "main";
 #    		rev = "23c9dcd9ffbbc805f336ae8bbdcaa94f4a1f5a00";
 #  	};
-#  	nixos-zsh = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-zsh.git";
-#    		ref = "main";
+  	nixos-zsh = fetchGit {
+    		url = "https://github.com/Harjanator/nixos-zsh.git";
+    		ref = "main";
 #    		rev = "0077cdcbe19b84c3dcacd45a14532f5db450e8ee";
-#  	};
+  	};
 #  	nixos-bash = fetchGit {
 #    		url = "https://github.com/typovrak/nixos-bash.git";
 #    		ref = "main";
@@ -166,13 +166,16 @@ in {
 			/etc/nixos/hardware-configuration.nix
 			/etc/nixos/variables.nix
     		(import "${nixos-locale}/configuration.nix")
-#    		(import "${nixos-projects}/configuration.nix")
-#    		(import "${nixos-zsh}/configuration.nix")
-#    		(import "${nixos-bash}/configuration.nix")
+    		(import "${nixos-zsh}/configuration.nix")
     		(import "${nixos-ssh}/configuration.nix")
+			(import "${nixos-fonts}/configuration.nix")
+    		(import "${nixos-fastfetch}/configuration.nix")
+#    		(import "${nixos-htop}/configuration.nix")
+#    		(import "${nixos-btop}/configuration.nix")
+#    		(import "${nixos-bash}/configuration.nix")
 #    		(import "${nixos-git}/configuration.nix")
+#    		(import "${nixos-projects}/configuration.nix")
 #    		(import "${nixos-flatpak}/configuration.nix")
-    		(import "${nixos-fonts}/configuration.nix")
 #    		(import "${nixos-gtk}/configuration.nix")
 #    		(import "${nixos-alacritty}/configuration.nix")
 #    		(import "${nixos-polybar}/configuration.nix")
@@ -183,13 +186,10 @@ in {
 #    		(import "${nixos-i3lock-color}/configuration.nix")
 #    		(import "${nixos-cava}/configuration.nix")
 #    		(import "${nixos-screenkey}/configuration.nix")
-#    		(import "${nixos-htop}/configuration.nix")
-#    		(import "${nixos-btop}/configuration.nix")
 #    		(import "${nixos-launchers}/configuration.nix")
 #    		(import "${nixos-yazi}/configuration.nix")
 #    		(import "${nixos-ghostty}/configuration.nix")
 #    		(import "${nixos-audio}/configuration.nix")
-    		(import "${nixos-fastfetch}/configuration.nix")
 #    		(import "${nixos-bat}/configuration.nix")
 #    		(import "${nixos-lightdm}/configuration.nix")
 #    		(import "${nixos-i3}/configuration.nix")
