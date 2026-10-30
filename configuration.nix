@@ -268,6 +268,7 @@ in {
 			mc
 			dnslookup
 			traceroute
+			fzf
     
 	# git git-lfs stow 
     # dnslookup inetutils
@@ -283,7 +284,6 @@ in {
 #      		docker_29
 #      		docker-compose
 #      		gdu
-#      		fzf
 #      		rnote
 #      		xclip
 #      		copyq
