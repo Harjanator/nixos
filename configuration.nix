@@ -172,7 +172,7 @@ in {
     		(import "${nixos-ssh}/configuration.nix")
 #    		(import "${nixos-git}/configuration.nix")
 #    		(import "${nixos-flatpak}/configuration.nix")
-#    		(import "${nixos-fonts}/configuration.nix")
+    		(import "${nixos-fonts}/configuration.nix")
 #    		(import "${nixos-gtk}/configuration.nix")
 #    		(import "${nixos-alacritty}/configuration.nix")
 #    		(import "${nixos-polybar}/configuration.nix")
