@@ -255,24 +255,35 @@ in {
 
 
   	environment.systemPackages = with pkgs; [
+			
+			git
       		wget
 			curl
-			git
+			jq
+      		tmux
+      		unzip
+      		ripgrep
+			net-tools
+			dig
+			mc
+			dnslookup
+			traceroute
+    
+	# git git-lfs stow 
+    # dnslookup inetutils
+    # nixos-anywhere htop btop
+    # fzf 
+
 #      		tree
 #      		man-db
-      		jq
 #      		gcc
-      		ripgrep
 #      		fd
-      		unzip
 #      		fuse
 #      		inxi
 #      		docker_29
 #      		docker-compose
-      		tmux
 #      		gdu
 #      		fzf
-
 #      		rnote
 #      		xclip
 #      		copyq
@@ -306,17 +317,20 @@ in {
 #			visidata
 	];
 
-# 	services = {
+	programs = {
+		nix-ld.enable = true; 
+	};
+	
+ 	services = {
+		qemuGuest.enable = true;
 #		printing.enable = true;
 #		xserver.videoDrivers = [ "nvidia" ];
-#	};
+	};
 
 #	virtualisation.docker = {
 #		package = pkgs.docker_29;
 #		enable = true;
 #	};
-
-  	programs.nix-ld.enable = true; 
 
 	zramSwap.enable = true;
 	systemd.oomd.enable = true;
