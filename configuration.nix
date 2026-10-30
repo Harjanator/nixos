@@ -31,11 +31,11 @@ let
 #    		ref = "main";
 #    		rev = "9984605d64d7b246609f162d570c6d690fe627fc";
 #  	};
-#  	nixos-fonts = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-fonts.git";
-#    		ref = "main";
+  	nixos-fonts = fetchGit {
+    		url = "https://github.com/Harjanator/nixos-fonts.git";
+    		ref = "main";
 #    		rev = "8846a7acbcac0e455e0980e57681b56c2f3a0b93";
-#  	};
+  	};
 #  	nixos-gtk = fetchGit {
 #    		url = "https://github.com/typovrak/nixos-gtk.git";
 #    		ref = "main";
