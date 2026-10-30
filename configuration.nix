@@ -268,12 +268,11 @@ in {
 			mc
 			dnslookup
 			traceroute
+			inetutils
 			fzf
     
 	# git git-lfs stow 
-    # dnslookup inetutils
     # nixos-anywhere htop btop
-    # fzf 
 
 #      		tree
 #      		man-db
