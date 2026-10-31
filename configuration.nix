@@ -276,6 +276,7 @@ in {
 			bat
 			zip
       		ascii-image-converter
+      		mlocate
 
 	# git git-lfs stow 
     # nixos-anywhere htop btop
@@ -292,7 +293,6 @@ in {
 #      		copyq
 #      		gnome-disk-utility
 #      		lolcat
-#      		mlocate
 #      		pciutils
 #			live-server
 #			nodejs_24
