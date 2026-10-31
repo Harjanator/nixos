@@ -254,7 +254,7 @@ in {
 		];
 	};
 
-	environment.wordlist.enable;
+	environment.wordlist.enable = true;
   	environment.systemPackages = with pkgs; [
 			
 			git
