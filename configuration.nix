@@ -278,6 +278,8 @@ in {
       		ascii-image-converter
       		mlocate
 			stow
+			lsb-release
+			subversion
 
 	# git git-lfs
     # nixos-anywhere htop btop
