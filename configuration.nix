@@ -280,6 +280,7 @@ in {
 			stow
 			lsb-release
 			subversion
+			scowl
 
 	# git git-lfs
     # nixos-anywhere htop btop
