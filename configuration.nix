@@ -51,11 +51,11 @@ let
     		ref = "main";
 #    		rev = "05c6c80f67769c035ea60da1a1a4171f2c18f854";
   	};
-#  	nixos-btop = fetchGit {
-#    		url = "https://github.com/Harjanator/nixos-btop.git";
-#    		ref = "main";
+  	nixos-btop = fetchGit {
+    		url = "https://github.com/Harjanator/nixos-btop.git";
+    		ref = "main";
 #    		rev = "b1791e8752989ef3ad9801eac469e6700512c733";
-#  	};
+  	};
   	nixos-yazi = fetchGit {
     		url = "https://github.com/Harjanator/nixos-yazi.git";
     		ref = "main";
@@ -87,7 +87,7 @@ in {
 			(import "${nixos-fonts}/configuration.nix")
     		(import "${nixos-fastfetch}/configuration.nix")
     		(import "${nixos-htop}/configuration.nix")
-#    		(import "${nixos-btop}/configuration.nix")
+    		(import "${nixos-btop}/configuration.nix")
     		(import "${nixos-bash}/configuration.nix")
 #    		(import "${nixos-git}/configuration.nix")
 #    		(import "${nixos-projects}/configuration.nix")
