@@ -46,11 +46,11 @@ let
 #    		ref = "main";
 #    		rev = "b606bc30b4730fa423bf36ea9b7c43312a720a8a";
 #  	};
-#  	nixos-htop = fetchGit {
-#    		url = "https://github.com/Harjanator/nixos-htop.git";
-#    		ref = "main";
+  	nixos-htop = fetchGit {
+    		url = "https://github.com/Harjanator/nixos-htop.git";
+    		ref = "main";
 #    		rev = "05c6c80f67769c035ea60da1a1a4171f2c18f854";
-#  	};
+  	};
 #  	nixos-btop = fetchGit {
 #    		url = "https://github.com/Harjanator/nixos-btop.git";
 #    		ref = "main";
