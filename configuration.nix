@@ -165,6 +165,7 @@ in {
   	imports = [
 			/etc/nixos/hardware-configuration.nix
 			/etc/nixos/variables.nix
+			<home-manager/nixos>
     		(import "${nixos-locale}/configuration.nix")
     		(import "${nixos-zsh}/configuration.nix")
     		(import "${nixos-ssh}/configuration.nix")
