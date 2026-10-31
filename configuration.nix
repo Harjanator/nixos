@@ -2,7 +2,7 @@
 
 let
 #	nixos-projects = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-projects.git";
+#    		url = "https://github.com/Harjanator/nixos-projects.git";
 #    		ref = "main";
 #    		rev = "23c9dcd9ffbbc805f336ae8bbdcaa94f4a1f5a00";
 #  	};
@@ -11,111 +11,56 @@ let
     		ref = "main";
 #    		rev = "0077cdcbe19b84c3dcacd45a14532f5db450e8ee";
   	};
-#  	nixos-bash = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-bash.git";
-#    		ref = "main";
+  	nixos-bash = fetchGit {
+    		url = "https://github.com/Harjanator/nixos-bash.git";
+    		ref = "main";
 #    		rev = "9f0bd593f9420b34881cf1fac6ca4d3630421795";
-#  	};
+  	};
   	nixos-ssh = fetchGit {
     		url = "https://github.com/Harjanator/nixos-ssh.git";
     		ref = "main";
 #    		rev = "0a033a979217d7e07933db23105035b6bca90859";
   	};
 #  	nixos-git = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-git.git";
+#    		url = "https://github.com/Harjanator/nixos-git.git";
 #    		ref = "main";
 #    		rev = "3331972f03dbc4571ff8ebcfbd10e5862bf553d2";
-#  	};
-#  	nixos-flatpak = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-flatpak.git";
-#    		ref = "main";
-#    		rev = "9984605d64d7b246609f162d570c6d690fe627fc";
 #  	};
   	nixos-fonts = fetchGit {
     		url = "https://github.com/Harjanator/nixos-fonts.git";
     		ref = "main";
 #    		rev = "8846a7acbcac0e455e0980e57681b56c2f3a0b93";
   	};
-#  	nixos-gtk = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-gtk.git";
-#    		ref = "main";
-#    		rev = "25e45018140e7b56a3b091a2c4fc371aca5a136b";
-#  	};
-#  	nixos-alacritty = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-alacritty.git";
-#    		ref = "main";
-#    		rev = "530cbbbe0f7fb5b7f529b417ea01756867825024";
-#  	};
-#  	nixos-polybar = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-polybar.git";
-#    		ref = "main";
-#    		rev = "1c2d4d039e52426cfe09f3a7b0cc4065afba8ef2";
-#  	};
 #  	nixos-nvim = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-nvim.git";
+#    		url = "https://github.com/Harjanator/nixos-nvim.git";
 #    		ref = "main";
 #    		rev = "92bca79a0f3402c9e52a21ad418b2f81e053fd7a";
 #  	};
-#  	nixos-pavucontrol = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-pavucontrol.git";
-#    		ref = "main";
-#    		rev = "10864bd78c46762cadf16764c2329142654fa643";
-#  	};
-#  	nixos-lazygit = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-lazygit.git";
-#    		ref = "main";
+  	nixos-lazygit = fetchGit {
+    		url = "https://github.com/Harjanator/nixos-lazygit.git";
+    		ref = "main";
 #    		rev = "84d5cba0a647c4bd2816620cd248f7a901c6116d";
-#  	};
+  	};
 #  	nixos-gh = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-gh.git";
+#    		url = "https://github.com/Harjanator/nixos-gh.git";
 #    		ref = "main";
 #    		rev = "b606bc30b4730fa423bf36ea9b7c43312a720a8a";
 #  	};
-#  	nixos-i3lock-color = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-i3lock-color.git";
-#    		ref = "main";
-#    		rev = "a36a98beba46998366c80c455b61df62733e6c67";
-#  	};
-#  	nixos-cava = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-cava.git";
-#    		ref = "main";
-#    		rev = "18194dba5305267f9e1e6111bfe2f1daa48e5a3b";
-#  	};
-#  	nixos-screenkey = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-screenkey.git";
-#    		ref = "main";
-#   		rev = "adc15b149bfa53afa71e05c58cff8dd7d547f705";
-#  	};
 #  	nixos-htop = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-htop.git";
+#    		url = "https://github.com/Harjanator/nixos-htop.git";
 #    		ref = "main";
 #    		rev = "05c6c80f67769c035ea60da1a1a4171f2c18f854";
 #  	};
 #  	nixos-btop = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-btop.git";
+#    		url = "https://github.com/Harjanator/nixos-btop.git";
 #    		ref = "main";
 #    		rev = "b1791e8752989ef3ad9801eac469e6700512c733";
 #  	};
-#  	nixos-launchers = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-launchers.git";
-#    		ref = "main";
-#    		rev = "ed91e036f0e886ef97c2cc8b0cac4b3dad6d652e";
-#  	};
-#  	nixos-yazi = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-yazi.git";
-#    		ref = "main";
+  	nixos-yazi = fetchGit {
+    		url = "https://github.com/Harjanator/nixos-yazi.git";
+    		ref = "main";
 #    		rev = "4baba9b239c0edd8642a977cf6c0a66a5246e1b1";
-#  	};
-#  	nixos-ghostty = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-ghostty.git";
-#    		ref = "main";
-#    		rev = "c98b721918777e86cfd9279523a97ae56af6214f";
-#  	};
-#  	nixos-audio = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-audio.git";
-#    		ref = "main";
-#    		rev = "1772380088567bdd610f90b6fb99486951ce9bff";
-#  	};
+  	};
   	nixos-fastfetch = fetchGit {
     		url = "https://github.com/Harjanator/nixos-fastfetch.git";
     		ref = "main";
@@ -126,41 +71,11 @@ let
     		ref = "main";
 #    		rev = "b573cf05c00af41ae86240e1e489765eec1136ca";
   	};
-#  	nixos-bat = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-bat.git";
-#    		ref = "main";
+  	nixos-bat = fetchGit {
+    		url = "https://github.com/Harjanator/nixos-bat.git";
+    		ref = "main";
 #    		rev = "ca2a5ff6c6fa6d1952ab498943545f362e907859";
-#  	};
-#  	nixos-lightdm = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-lightdm.git";
-#    		ref = "main";
-#    		rev = "aacd791fb451231da52911aff7d8cb7e0b4ed8b5";
-#  	};
-#  	nixos-i3 = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-i3.git";
-#    		ref = "main";
-#    		rev = "cb14880766c1bf7d3423301e4c50101d9453fa7b";
-#  	};
-#  	nixos-stylus = fetchGit {
-#    		url = "https://github.com/typovrak/nixos-stylus.git";
-#    		ref = "main";
-#    		rev = "e760d17e56fefb3a9386673c48aabbb0cd9018d2";
-#	};
-#	nixos-nemo = fetchGit {
-#		url = "https://github.com/typovrak/nixos-nemo.git";
-#		ref = "main";
-#		rev = "4c5a2f449958144b18f0a8e6d22b5c793e23e9f5";
-#	};
-#	nixos-zellij = fetchGit {
-#		url = "https://github.com/typovrak/nixos-zellij.git";
-#		ref = "main";
-#		rev = "7b8d45de50c69ff9433bcb33c57419c6721844aa";
-#	};
-#	nixos-ccburn = fetchGit {
-#		url = "https://github.com/typovrak/nixos-ccburn.git";
-#		ref = "main";
-#		rev = "84542b289b6e9fb5fa431ff3a1002d4690e7d364";
-#	};
+  	};
 in {
   	imports = [
 			/etc/nixos/hardware-configuration.nix
@@ -173,31 +88,14 @@ in {
     		(import "${nixos-fastfetch}/configuration.nix")
 #    		(import "${nixos-htop}/configuration.nix")
 #    		(import "${nixos-btop}/configuration.nix")
-#    		(import "${nixos-bash}/configuration.nix")
+¤    		(import "${nixos-bash}/configuration.nix")
 #    		(import "${nixos-git}/configuration.nix")
 #    		(import "${nixos-projects}/configuration.nix")
-#    		(import "${nixos-flatpak}/configuration.nix")
-#    		(import "${nixos-gtk}/configuration.nix")
-#    		(import "${nixos-alacritty}/configuration.nix")
-#    		(import "${nixos-polybar}/configuration.nix")
-#    		(import "${nixos-nvim}/configuration.nix")
-#    		(import "${nixos-pavucontrol}/configuration.nix")
-#    		(import "${nixos-lazygit}/configuration.nix")
-#    		(import "${nixos-gh}/configuration.nix")
-#    		(import "${nixos-i3lock-color}/configuration.nix")
-#    		(import "${nixos-cava}/configuration.nix")
-#    		(import "${nixos-screenkey}/configuration.nix")
-#    		(import "${nixos-launchers}/configuration.nix")
+    		(import "${nixos-bat}/configuration.nix")
 #    		(import "${nixos-yazi}/configuration.nix")
-#    		(import "${nixos-ghostty}/configuration.nix")
-#    		(import "${nixos-audio}/configuration.nix")
-#    		(import "${nixos-bat}/configuration.nix")
-#    		(import "${nixos-lightdm}/configuration.nix")
-#    		(import "${nixos-i3}/configuration.nix")
-#    		(import "${nixos-stylus}/configuration.nix")
-#			(import "${nixos-nemo}/configuration.nix")
-#			(import "${nixos-zellij}/configuration.nix")
-#			(import "${nixos-ccburn}/configuration.nix")
+#    		(import "${nixos-lazygit}/configuration.nix")
+#    		(import "${nixos-nvim}/configuration.nix")
+#    		(import "${nixos-gh}/configuration.nix")
   	];
 
 	system = { stateVersion = "26.05"; };
