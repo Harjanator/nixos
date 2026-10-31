@@ -86,7 +86,7 @@ in {
     		(import "${nixos-ssh}/configuration.nix")
 			(import "${nixos-fonts}/configuration.nix")
     		(import "${nixos-fastfetch}/configuration.nix")
-#    		(import "${nixos-htop}/configuration.nix")
+    		(import "${nixos-htop}/configuration.nix")
 #    		(import "${nixos-btop}/configuration.nix")
     		(import "${nixos-bash}/configuration.nix")
 #    		(import "${nixos-git}/configuration.nix")
