@@ -92,7 +92,7 @@ in {
 #    		(import "${nixos-git}/configuration.nix")
 #    		(import "${nixos-projects}/configuration.nix")
     		(import "${nixos-bat}/configuration.nix")
-#    		(import "${nixos-yazi}/configuration.nix")
+    		(import "${nixos-yazi}/configuration.nix")
 #    		(import "${nixos-lazygit}/configuration.nix")
 #    		(import "${nixos-nvim}/configuration.nix")
 #    		(import "${nixos-gh}/configuration.nix")
