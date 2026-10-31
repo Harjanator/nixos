@@ -273,6 +273,9 @@ in {
 			fzf
       		tree			
      		fd
+			bat
+			zip
+      		ascii-image-converter
 
 	# git git-lfs stow 
     # nixos-anywhere htop btop
@@ -289,7 +292,6 @@ in {
 #      		copyq
 #      		gnome-disk-utility
 #      		lolcat
-#      		ascii-image-converter
 #      		mlocate
 #      		pciutils
 #			live-server
@@ -304,7 +306,6 @@ in {
 #			zellij
 #			wdiff
 #			insomnia
-#			zip
 #			zed-editor
 #			code-cursor
 #			davinci-resolve
