@@ -277,7 +277,7 @@ in {
 			fzf
       		tree			
      		fd
-			bat
+#			bat
 			zip
       		ascii-image-converter
       		mlocate
