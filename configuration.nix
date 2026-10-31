@@ -277,8 +277,9 @@ in {
 			zip
       		ascii-image-converter
       		mlocate
+			stow
 
-	# git git-lfs stow 
+	# git git-lfs
     # nixos-anywhere htop btop
 
 #      		man-db
