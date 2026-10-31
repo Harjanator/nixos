@@ -283,8 +283,8 @@ in {
       		mlocate
 			stow
 			lsb-release
-			subversion
-			scowl
+#			subversion
+#			scowl
 
 	# git git-lfs
     # nixos-anywhere htop btop
