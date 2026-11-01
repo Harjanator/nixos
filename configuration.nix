@@ -261,7 +261,7 @@ in {
 			];
 			dns = [ "192.168.1.1" "8.8.8.8" ];
 			log-driver = "journald";
-#			log-opts = { max-size = "100m"; };
+			log-opts = { max-size = "100m"; };
 			storage-driver = "overlay2";
 		 };
 		package = pkgs.docker_29;
