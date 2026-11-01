@@ -265,7 +265,7 @@ in {
 			];
 			log-opts = {
 				max-size = "100m";
-			}
+			};
 			storage-driver = "overlay2";
 
 #			fixed-cidr-v6 = "fd00::/80";
