@@ -256,7 +256,7 @@ in {
 			default-address-pools = [
 				{
 					base = "10.17.0.0/16";
-					size = "24";
+					size = 24;
 				}
 			];
 #			dns = [
