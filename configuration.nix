@@ -107,14 +107,17 @@ in {
 
 	networking = {
 #		hostName = "typonixos";
-		networkmanager.enable = true;
 #		hosts."127.0.0.1" = [ "passbolt.local" ];
 		nftables.enable = true;
+		usePredictableInterfaceNames = false;
+		networkmanager = {
+			enable = true;
+		};
 		firewall = {
 			enable = true ;
 		};
 	};
-	
+
 	services.firewalld = {
 		enable = true;
 		# Optional for NetworkManager, block inbound connections for new/public/untrusted WiFi connections
@@ -161,6 +164,8 @@ in {
 			# place sudoers rules here
 		];
 	};
+
+ 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
 	environment.wordlist.enable = true;
   	environment.systemPackages = with pkgs; [
