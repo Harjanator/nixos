@@ -105,6 +105,11 @@ in {
     		efi.canTouchEfiVariables = true;
   	};
 
+	fileSystems."/gurulandia" = {
+	device = "/dev/data/gurulandia";
+	fsType = "ext4";
+	};
+
 	networking = {
 #		hostName = "typonixos";
 #		hosts."127.0.0.1" = [ "passbolt.local" ];
