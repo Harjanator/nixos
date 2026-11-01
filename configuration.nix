@@ -251,8 +251,8 @@ in {
 	};
 
 	virtualisation.docker = {
-#		daemon.settings = {
-#			data-root = "/gurulandia/docker";
+		daemon.settings = {
+			data-root = "/gurulandia/docker";
 #			default-address-pools = [
 #				{
 #					base = "10.17.0.0/16";
@@ -271,7 +271,7 @@ in {
 #			fixed-cidr-v6 = "fd00::/80";
 #			ipv6 = true;
 #			live-restore = true;
-#		 };
+		 };
 		package = pkgs.docker_29;
 		enable = true;  		
 	};
