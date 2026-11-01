@@ -253,12 +253,12 @@ in {
 	virtualisation.docker = {
 		daemon.settings = {
 			data-root = "/gurulandia/docker";
-#			default-address-pools = [
-#				{
-#					base = "10.17.0.0/16";
-#					size = "24";
-#				}
-#			];
+			default-address-pools = [
+				{
+					base = "10.17.0.0/16";
+					size = "24";
+				}
+			];
 #			dns = [
 #				"192.168.99.1"
 #				"8.8.8.8"
