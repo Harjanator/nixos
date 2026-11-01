@@ -260,7 +260,7 @@ in {
 				}
 			];
 			dns = [ "192.168.1.1" "8.8.8.8" ];
-			log-driver = "journald";
+			log-driver = "local";
 			log-opts = { max-size = "100m"; };
 			storage-driver = "overlay2";
 		 };
