@@ -264,7 +264,7 @@ in {
 				"8.8.8.8"
 			];
 			log-opts = {
-				max-size = "100m";
+				"max-size" = "100m";
 			};
 			storage-driver = "overlay2";
 
