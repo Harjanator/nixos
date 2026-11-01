@@ -21,11 +21,11 @@ let
     		ref = "main";
 #    		rev = "0a033a979217d7e07933db23105035b6bca90859";
   	};
-#  	nixos-git = fetchGit {
-#    		url = "https://github.com/Harjanator/nixos-git.git";
-#    		ref = "main";
+  	nixos-git = fetchGit {
+    		url = "https://github.com/Harjanator/nixos-git.git";
+    		ref = "main";
 #    		rev = "3331972f03dbc4571ff8ebcfbd10e5862bf553d2";
-#  	};
+  	};
   	nixos-fonts = fetchGit {
     		url = "https://github.com/Harjanator/nixos-fonts.git";
     		ref = "main";
@@ -89,11 +89,11 @@ in {
     		(import "${nixos-htop}/configuration.nix")
     		(import "${nixos-btop}/configuration.nix")
     		(import "${nixos-bash}/configuration.nix")
-#    		(import "${nixos-git}/configuration.nix")
+    		(import "${nixos-git}/configuration.nix")
 #    		(import "${nixos-projects}/configuration.nix")
     		(import "${nixos-bat}/configuration.nix")
     		(import "${nixos-yazi}/configuration.nix")
-#    		(import "${nixos-lazygit}/configuration.nix")
+    		(import "${nixos-lazygit}/configuration.nix")
 #    		(import "${nixos-nvim}/configuration.nix")
 #    		(import "${nixos-gh}/configuration.nix")
   	];
@@ -159,7 +159,7 @@ in {
 	environment.wordlist.enable = true;
   	environment.systemPackages = with pkgs; [
 			
-			git
+#			git
       		wget
 			curl
 			jq
