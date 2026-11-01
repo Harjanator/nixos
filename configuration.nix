@@ -114,6 +114,12 @@ in {
 			enable = true ;
 		};
 	};
+	
+	services.firewalld = {
+		enable = true;
+		# Optional for NetworkManager, block inbound connections for new/public/untrusted WiFi connections
+		settings.DefaultZone = "drop";
+	};
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
