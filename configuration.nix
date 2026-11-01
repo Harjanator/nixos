@@ -150,7 +150,7 @@ in {
     			extraGroups = [
 				"networkmanager"
 				"wheel"
-#				"docker"
+				"docker"
 			];
 			openssh.authorizedKeys.keys = ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHta20AMtJvLmxCglxEQrnutFacEGTJ+/80ODeS2lbT7 gurulandia"];
 		};
@@ -210,7 +210,7 @@ in {
 #      		man-db
 #      		fuse
 #      		inxi
-#      		docker_29
+      		docker_29
 #      		docker-compose
 #      		gdu
 #      		rnote
@@ -250,10 +250,31 @@ in {
 		qemuGuest.enable = true;
 	};
 
-#	virtualisation.docker = {
-#		package = pkgs.docker_29;
-#		enable = true;
-#	};
+	virtualisation.docker = {
+		daemon.settings = {
+			data-root = "/gurulandia/docker";
+			default-address-pools" = [
+				{
+					base = "10.17.0.0/16";
+					size = "24";
+				}
+			];
+			dns = [
+				"192.168.99.1",
+				"8.8.8.8"
+			];
+			log-opts = {
+				max-size = "100m";
+			};
+			storage-driver = "overlay2";
+
+#			fixed-cidr-v6 = "fd00::/80";
+#			ipv6 = true;
+#			live-restore = true;
+		 };
+		package = pkgs.docker_29;
+		enable = true;  		
+	};
 
 	zramSwap.enable = true;
 	systemd.oomd.enable = true;
