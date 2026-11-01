@@ -109,6 +109,7 @@ in {
 #		hostName = "typonixos";
 		networkmanager.enable = true;
 #		hosts."127.0.0.1" = [ "passbolt.local" ];
+		nftables.enable = true;
 		firewall = {
 			enable = true ;
 		};
