@@ -90,10 +90,10 @@ in {
     		(import "${nixos-btop}/configuration.nix")
     		(import "${nixos-bash}/configuration.nix")
     		(import "${nixos-git}/configuration.nix")
-#    		(import "${nixos-projects}/configuration.nix")
     		(import "${nixos-bat}/configuration.nix")
     		(import "${nixos-yazi}/configuration.nix")
     		(import "${nixos-lazygit}/configuration.nix")
+#    		(import "${nixos-projects}/configuration.nix")
 #    		(import "${nixos-nvim}/configuration.nix")
 #    		(import "${nixos-gh}/configuration.nix")
   	];
@@ -109,7 +109,16 @@ in {
 #		hostName = "typonixos";
 		networkmanager.enable = true;
 #		hosts."127.0.0.1" = [ "passbolt.local" ];
+		firewall = {
+			enable = true ;
+		};
 	};
+
+  # Open ports in the firewall.
+  # networking.firewall.allowedTCPPorts = [ ... ];
+  # networking.firewall.allowedUDPPorts = [ ... ];
+  # Or disable the firewall altogether.
+  # networking.firewall.enable = false;
 
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
 	nix.gc = {
@@ -119,22 +128,12 @@ in {
 	};
 	nixpkgs.config.allowUnfree = true;
 
-#	hardware = {
-#		graphics.enable = true;
-#		nvidia = {
-#			modesetting.enable = true;
-#			open = false;
-#			nvidiaSettings = true;
-#		};
-#	};
-
 	users = {
 		users.${config.username} = {
 			isNormalUser = true;
     			extraGroups = [
 				"networkmanager"
 				"wheel"
-#				"audio"
 #				"docker"
 			];
 			openssh.authorizedKeys.keys = ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHta20AMtJvLmxCglxEQrnutFacEGTJ+/80ODeS2lbT7 gurulandia"];
@@ -160,7 +159,9 @@ in {
   	environment.systemPackages = with pkgs; [
 			
 #			git
-      		wget
+			nfs-utils
+      		gnupg
+			wget
 			curl
 			jq
       		tmux
@@ -175,12 +176,15 @@ in {
 			fzf
       		tree			
      		fd
-#			bat
 			zip
       		ascii-image-converter
       		mlocate
+			resvg
 			stow
 			lsb-release
+			gcc
+			_7zz-rar
+			python3
 #			subversion
 #			scowl
 
@@ -188,7 +192,6 @@ in {
     # nixos-anywhere htop btop
 
 #      		man-db
-#      		gcc
 #      		fuse
 #      		inxi
 #      		docker_29
@@ -215,7 +218,6 @@ in {
 #			zed-editor
 #			code-cursor
 #			davinci-resolve
-#			ffmpeg
 #			claude-code
 #			asciinema
 #			railway
@@ -230,8 +232,6 @@ in {
 	
  	services = {
 		qemuGuest.enable = true;
-#		printing.enable = true;
-#		xserver.videoDrivers = [ "nvidia" ];
 	};
 
 #	virtualisation.docker = {
