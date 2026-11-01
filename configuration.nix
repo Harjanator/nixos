@@ -263,9 +263,9 @@ in {
 #				"192.168.99.1"
 #				"8.8.8.8"
 #			];
-			log-opts = {
-				max-size = "100m";
-			};
+#			log-opts = {
+#				max-size = "100m";
+#			};
 			storage-driver = "overlay2";
 
 #			fixed-cidr-v6 = "fd00::/80";
