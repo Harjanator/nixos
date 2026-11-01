@@ -251,22 +251,22 @@ in {
 	};
 
 	virtualisation.docker = {
-		daemon.settings = {
-			data-root = "/gurulandia/docker";
-			default-address-pools = [
-				{
-					base = "10.17.0.0/16";
-					size = "24";
-				}
-			];
-			dns = [
-				"192.168.99.1"
-				"8.8.8.8"
-			];
-			log-opts = {
-				max-size = "100m";
-			};
-			storage-driver = "overlay2";
+#		daemon.settings = {
+#			data-root = "/gurulandia/docker";
+#			default-address-pools = [
+#				{
+#					base = "10.17.0.0/16";
+#					size = "24";
+#				}
+#			];
+#			dns = [
+#				"192.168.99.1"
+#				"8.8.8.8"
+#			];
+#			log-opts = {
+#				max-size = "100m";
+#			};
+#			storage-driver = "overlay2";
 
 #			fixed-cidr-v6 = "fd00::/80";
 #			ipv6 = true;
