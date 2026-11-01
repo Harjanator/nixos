@@ -131,6 +131,7 @@ in {
   # networking.firewall.enable = false;
 
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
 	nix.gc = {
 		automatic = true;  # Enable the automatic garbage collector
 		dates = "03:15";   # When to run the garbage collector
@@ -164,8 +165,6 @@ in {
 			# place sudoers rules here
 		];
 	};
-
- 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
 	environment.wordlist.enable = true;
   	environment.systemPackages = with pkgs; [
