@@ -255,8 +255,8 @@ in {
 			data-root = "/gurulandia/docker";
 			default-address-pools = [
 				{
-					base = "10.17.0.0/16",
-					size = "24"
+					base = "10.17.0.0/16";
+					size = "24";
 				}
 			];
 			dns = [
