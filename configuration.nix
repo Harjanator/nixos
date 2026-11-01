@@ -259,18 +259,10 @@ in {
 					size = 24;
 				}
 			];
-			dns = [
-				"192.168.99.1"
-				"8.8.8.8"
-			];
-#			log-opts = {
-#				"max-size" = "100m";
-#			};
+			dns = [ "192.168.99.1" "8.8.8.8" ];
+			log-driver = "journald";
+			log-opts = { max-size = "100m" };
 			storage-driver = "overlay2";
-
-#			fixed-cidr-v6 = "fd00::/80";
-#			ipv6 = true;
-#			live-restore = true;
 		 };
 		package = pkgs.docker_29;
 		enable = true;  		
