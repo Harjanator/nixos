@@ -271,7 +271,7 @@ in {
 #			fixed-cidr-v6 = "fd00::/80";
 #			ipv6 = true;
 #			live-restore = true;
-		 };
+#		 };
 		package = pkgs.docker_29;
 		enable = true;  		
 	};
